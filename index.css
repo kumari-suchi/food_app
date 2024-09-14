@@ -1,3 +1,4 @@
-#heading{
-    color: chartreuse;
-}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
