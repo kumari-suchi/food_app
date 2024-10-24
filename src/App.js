@@ -25,7 +25,7 @@ const AppLayout=()=> {
 
    useEffect(()=>{
     const data={
-        name:"Ram",
+        name:"",
 
     };
     setUserInfo(data.name);
@@ -38,13 +38,15 @@ const AppLayout=()=> {
                 <div className="app">
                     <Header/>
                     <Outlet/>
-                    
+                    <Logout/>
                 </div>
-                <Logout/>
+                
             </UserContext.Provider>
+            
         </Provider>
       
         </Auth0Provider>
+        
     );
 };
 
@@ -76,6 +78,10 @@ const appRouter=createBrowserRouter([
             {
                 path:"/cart",
                 element:<Cart/>
+            },
+            {
+                path:"/logout",
+                element:<Logout/>
             },
         ],
         errorElement:<Error/>

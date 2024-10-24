@@ -56,6 +56,7 @@ const Header = () => {
                             {loggedInUser}
                         </span>
                     )}
+                       
 
                     {/* Login/Logout Button */}
                     <Link to="/grocery">
